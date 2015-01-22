@@ -7,9 +7,6 @@ Route::group(['namespace' => 'NpmWeb\MyAppName\Controllers\Backend'], function()
     Route::resource('logins', 'LoginsController', ['only'=>['create','store','destroy']]);
 
     Route::group(['before'=>['auth']], function() {
-        Route::get('/', 'OrganizationsController@index');
-        Route::resource('organizations', 'OrganizationsController');
-
     });
 });
 
