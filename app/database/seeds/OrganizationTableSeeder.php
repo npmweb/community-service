@@ -1,40 +1,67 @@
 <?php
 
-use NpmWeb\MyAppName\Models\Organization;
+use NpmWeb\ServiceOpportunities\Models\Organization;
 
 class OrganizationTableSeeder extends Seeder {
 
     public function run()
     {
-        Organization::truncate();
+        DB::table('organizations')->delete();
 
-        Organization::create([
+        $o = Organization::create([
             'id' => 1,
             'permalink' => 'abc',
-            'name' => 'Parent Organization',
-            'logo' => 'someorg.jif',
-            'url' => 'http://some.org',
-            'address' => '123 Main Street',
-            'city' => 'Atlanta',
+            'name' => 'Parent Church',
+            'address1' => '4350 North Point Parkway',
+            'city' => 'Alpharetta',
             'state' => 'GA',
-            'postal_code' => '30328',
+            'postal_code' => '30022',
             'country' => 'US',
-            'email' => 'one@some.org',
+            'from_email' => 'from@tables.org',
         ]);
+        $o->campaigns()->sync([1,2,3,4,5]);
 
-        Organization::create([
+        $o = Organization::create([
             'id' => 2,
             'permalink' => 'bcd',
-            'name' => 'Child Organization',
-            'logo' => 'someorg.jif',
-            'url' => 'http://some.org',
-            'address' => '123 Main Street',
-            'city' => 'Atlanta',
+            'parent_organization_id' => 1,
+            'name' => 'Child Church',
+            'address1' => '4350 North Point Parkway',
+            'city' => 'Alpharetta',
             'state' => 'GA',
-            'postal_code' => '30328',
+            'postal_code' => '30022',
             'country' => 'US',
-            'email' => 'one@some.org',
+            'from_email' => 'from@tables.org',
         ]);
+        $o->campaigns()->sync([3,4,5]);
+
+        $o = Organization::create([
+            'id' => 3,
+            'permalink' => 'cde',
+            'parent_organization_id' => 1,
+            'name' => 'Third Church',
+            'address1' => '4350 North Point Parkway',
+            'city' => 'Alpharetta',
+            'state' => 'GA',
+            'postal_code' => '30022',
+            'country' => 'US',
+            'from_email' => 'from@tables.org',
+        ]);
+        $o->campaigns()->sync([1,2,3]);
+
+        $o = Organization::create([
+            'id' => 4,
+            'permalink' => 'def',
+            'name' => 'Unrelated Church',
+            'address1' => '4350 North Point Parkway',
+            'city' => 'Alpharetta',
+            'state' => 'GA',
+            'postal_code' => '30022',
+            'country' => 'US',
+            'from_email' => 'from@tables.org',
+        ]);
+        $o->campaigns()->sync([1,2,3]);
+
     }
 
 }

@@ -20,7 +20,8 @@ module.exports = function(grunt) {
       docs: 'docs',
       views: 'app/views',
       routes: 'app/routes.php',
-      config: 'app/config'
+      config: 'app/config',
+      storage: 'app/storage'
     },
 
     clean: {
@@ -39,6 +40,9 @@ module.exports = function(grunt) {
       bower: [
         '<%= paths.frontend %>/includes/vendor',
         '<%= paths.backend %>/includes/vendor'
+      ],
+      viewStorage: [
+        '<%= paths.storage %>/views/*'
       ]
     },
     symlink: {
@@ -79,13 +83,6 @@ module.exports = function(grunt) {
         colors: true
       }
     },
-    /*
-    phpspec: {
-      app: {
-        specs: '<%= paths.tests %>/spec'
-      }
-    },
-    */
     phpdocumentor: {
       dist: {
         options: {
@@ -156,8 +153,11 @@ module.exports = function(grunt) {
     sass: {
       backend: {
         options: {
-          outputStyle: 'compressed',
-          includePaths: ['<%= paths.backend %>/includes/vendor/foundation/scss']
+          // outputStyle: 'compressed',
+          includePaths: [
+            '<%= paths.backend %>/includes/vendor/foundation/scss',
+            '<%= paths.backend %>/includes/vendor/admin-theme/src/scss',
+          ]
         },
         files: {
           '<%= paths.backend %>/<%= paths.css %>/dist/main.min.css':
@@ -166,7 +166,7 @@ module.exports = function(grunt) {
       },
       frontend: {
         options: {
-          outputStyle: 'compressed',
+          // outputStyle: 'compressed',
           includePaths: ['<%= paths.frontend %>/includes/vendor/foundation/scss']
         },
         files: {
@@ -178,12 +178,13 @@ module.exports = function(grunt) {
     wiredep: {
       localBackend: {
         src: [
-          'app/views/backend/layouts/scripts/_local.blade.php'
+          'app/views/packages/npmweb/admin-theme-laravel-layout/scripts/bower/_local.blade.php'
         ],
         options: {
           directory: 'endpoints/backend/includes/vendor',
           bowerJson: require('./endpoints/backend/bower.json'),
-          ignorePath: '../../../../../endpoints/backend/'
+          ignorePath: '../../../../../../../endpoints/backend/',
+          exclude: [/tinymce/]
         },
         fileTypes: {
           html: {
@@ -195,12 +196,12 @@ module.exports = function(grunt) {
       },
       localFrontend: {
         src: [
-          'app/views/frontend/layouts/scripts/_local.blade.php'
+          'app/views/frontend/layouts/scripts/bower/_local.blade.php'
         ],
         options: {
           directory: 'endpoints/frontend/includes/vendor',
           bowerJson: require('./endpoints/frontend/bower.json'),
-          ignorePath: '../../../../../endpoints/frontend/'
+          ignorePath: '../../../../../../endpoints/frontend/',
         },
         fileTypes: {
           html: {
@@ -212,36 +213,53 @@ module.exports = function(grunt) {
       },
       releaseBackend: {
         src: [
-          'app/views/backend/layouts/scripts/_for-usemin.blade.php'
+          'app/views/packages/npmweb/admin-theme-laravel-layout/scripts/bower/_for_usemin.blade.php'
         ],
         options: {
           directory: 'endpoints/backend/includes/vendor',
           bowerJson: require('./endpoints/backend/bower.json'),
-          ignorePath: '../../../../../endpoints/backend/'
+          ignorePath: '../../../../../../../endpoints/backend/',
+          exclude: [/tinymce/]
         }
       },
       releaseFrontend: {
         src: [
-          'app/views/frontend/layouts/scripts/_for-usemin.blade.php'
+          'app/views/frontend/layouts/scripts/bower/_for_usemin.blade.php'
         ],
         options: {
           directory: 'endpoints/frontend/includes/vendor',
           bowerJson: require('./endpoints/frontend/bower.json'),
-          ignorePath: '../../../../../endpoints/frontend/'
+          ignorePath: '../../../../../../endpoints/frontend/',
         }
       }
     },
     useminPrepare: {
       backend: {
-        src: 'app/views/backend/layouts/scripts/_for-usemin.blade.php',
+        src: 'app/views/packages/npmweb/admin-theme-laravel-layout/scripts/bower/_for_usemin.blade.php',
         options: {
           dest: 'endpoints/backend'
         }
       },
       frontend: {
-        src: 'app/views/frontend/layouts/scripts/_for-usemin.blade.php',
+        src: 'app/views/frontend/layouts/scripts/bower/_for_usemin.blade.php',
         options: {
           dest: 'endpoints/frontend'
+        }
+      },
+      options: {
+        flow: {
+          backend: {
+            steps: {
+              js: ['concat']
+            },
+            post: {}
+          },
+          frontend: {
+            steps: {
+              js: ['concat']
+            },
+            post: {}
+          }
         }
       }
     },
@@ -258,12 +276,21 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      bower: {
-        files: ['bower.json'],
+      bowerFrontend: {
+        files: [
+          '<%= paths.frontend %>/bower.json',
+        ],
         tasks: [
           'shell:bowerFrontend',
+          'wiredep:localFrontend'
+        ]
+      },
+      bowerBackend: {
+        files: [
+          '<%= paths.backend %>/bower.json',
+        ],
+        tasks: [
           'shell:bowerBackend',
-          'wiredep:localFrontend',
           'wiredep:localBackend'
         ]
       },
@@ -274,13 +301,6 @@ module.exports = function(grunt) {
         ],
         tasks: ['phpunit','notify:phpunit']
       },
-      // phpspec: {
-      //   files: [
-      //     '<%= paths.tests %>/spec/**/*.php',
-      //     '<%= paths.src %>/**/*.php'
-      //   ],
-      //   tasks: ['phpspec','notify:phpspec']
-      // },
       sass: {
         files: [
           '<%= paths.backend %>/<%= paths.sass %>/**/*.scss',
@@ -296,12 +316,6 @@ module.exports = function(grunt) {
           message: 'All tests passed.'
         }
       },
-      // phpspec: {
-      //   options: {
-      //     title: 'phpspec',
-      //     message: 'All tests passed.'
-      //   }
-      // },
       sass: {
         options: {
           title: 'Sass',
@@ -318,7 +332,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mysql-dump');
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-phpunit');
-  // grunt.loadNpmTasks('grunt-phpspec');
   grunt.loadNpmTasks('grunt-phpdocumentor');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-shell');
@@ -332,6 +345,7 @@ module.exports = function(grunt) {
     'shell:composer',
     'symlink',
     'chmod',
+    'clean:bower',
     'shell:bowerFrontend',
     'shell:bowerBackend',
     'sass',
@@ -345,32 +359,34 @@ module.exports = function(grunt) {
     'shell:composerDontPromptForChanges',
     'symlink',
     'chmod',
+    'shell:clearCache',
+    'clean:viewStorage',
+    'clean:bower',
     'shell:bowerFrontend',
     'shell:bowerBackend',
     'sass',
     'myusemin',
     'shell:migrate',
-    'shell:dbseed',
-    'shell:clearCache'
+    'shell:dbseed'
   ]);
   grunt.registerTask('production', [
     'shell:composerDontPromptForChanges',
     'symlink',
     'chmod',
+    'shell:clearCache',
+    'clean:bower',
     'shell:bowerFrontend',
     'shell:bowerBackend',
     'sass',
     'myusemin',
-    'shell:migrate',
-    'shell:clearCache'
+    'shell:migrate'
   ]);
   grunt.registerTask('myusemin', [
     'wiredep:releaseFrontend',
     'wiredep:releaseBackend',
     'useminPrepare:frontend',
     'useminPrepare:backend',
-    'concat',
-    'uglify'
+    'concat'
     // don't call usemin itself because it overwrites the block in the file
     // we are using Laravel and a hard-coded script tag to handle that
   ]);

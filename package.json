@@ -1,6 +1,6 @@
 {
-  "name": "MyAppName",
-  "version": "0.1.0",
+  "name": "CommunityService",
+  "version": "1.0.0",
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-chmod": "~1.0.3",
@@ -11,13 +11,12 @@
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-mysql-dump": "^1.0.0",
-    "grunt-notify": "~0.3.0",
+    "grunt-notify": "~0.3.1",
     "grunt-phpdocumentor": "^0.4.1",
     "grunt-phpunit": "~0.3.3",
-    "grunt-sass": "~0.8.0",
+    "grunt-sass": "~0.17.0",
     "grunt-shell": "~0.7.0",
     "grunt-usemin": "^2.5.1",
-    "grunt-wiredep": "^1.9.0",
-    "node-sass": "~0.7.0"
+    "grunt-wiredep": "^1.9.0"
   }
 }

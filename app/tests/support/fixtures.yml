@@ -1,4 +1,0 @@
-NpmWeb\MyAppName\Models\Organization:
-  name: $string
-  permalink: $string
-  email: test@example.com

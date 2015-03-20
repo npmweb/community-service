@@ -82,7 +82,7 @@ return array(
 
     'providers' => array(
         'Illuminate\Foundation\Providers\ArtisanServiceProvider',
-        // 'Illuminate\Auth\AuthServiceProvider',
+        'Illuminate\Auth\AuthServiceProvider',
         'Illuminate\Cache\CacheServiceProvider',
         'Illuminate\Session\CommandsServiceProvider',
         'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
@@ -109,16 +109,21 @@ return array(
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
         // custom
-        'NpmWeb\Auth\AuthServiceProvider',
+        'GrahamCampbell\Flysystem\FlysystemServiceProvider',
+        'Maatwebsite\Excel\ExcelServiceProvider',
+        'NpmWeb\AdminThemeLaravelLayout\LayoutServiceProvider',
+        'NpmWeb\CdnHelper\CdnHelperServiceProvider',
         'NpmWeb\ClientValidationGenerator\Laravel\ClientValidationServiceProvider',
         'NpmWeb\FormBuilder\HtmlServiceProvider',
-        'NpmWeb\LaravelHealthCheck\LaravelHealthCheckServiceProvider',
+        'NpmWeb\CommunityService\Services\FtpUploadHandlerServiceProvider',
+        'NpmWeb\CommunityService\ViewComposers\ViewComposerServiceProvider',
+        'NpmWeb\LaravelLogin\LoginServiceProvider',
         'NpmWeb\LaravelValidatorCustomRules\ValidationServiceProvider',
-        'NpmWeb\MiddlewareClient\Laravel\MiddlewareClientServiceProvider',
-        'NpmWeb\MyAppName\ViewComposers\ViewComposerServiceProvider',
+        'NpmWeb\MultilevelOrganizations\MultilevelOrganizationsServiceProvider',
+        'NpmWeb\Payment\Laravel\PaymentServiceProvider',
         'NpmWeb\PhpEnvLoader\Laravel\EnvLoaderServiceProvider',
         'NpmWeb\Reference\Laravel\ReferenceServiceProvider',
-        'Way\Generators\GeneratorsServiceProvider',
+        'NpmWeb\ServiceOpportunities\ServiceOpportunitiesServiceProvider',
 
     ),
 

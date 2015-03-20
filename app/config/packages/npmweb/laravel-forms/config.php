@@ -1,6 +1,8 @@
 <?php
 
 return array(
-	'col_width' => 'large-6 large-offset-3',
-	'row_per_field' => true,
+    'driver' => 'foundationBasicGrid',
+    'css_framework' => 'foundation',
+    'col_width' => '', // full width
+    'row_per_field' => true,
 );

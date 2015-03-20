@@ -6,7 +6,7 @@ AddDefaultCharset UTF-8
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /community-service
+    RewriteBase /
 
     # Redirect Trailing Slashes...
   RewriteRule ^(.*)/$ /$1 [L,R=301]

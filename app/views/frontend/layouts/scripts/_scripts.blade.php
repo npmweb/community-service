@@ -1,6 +1,2 @@
-{{-- includes scripts appropriate to the environment --}}
-@if( is_local() )
-    @include('layouts.scripts._local')
-@else
-    @include('layouts.scripts._release')
-@endif
+@include('layouts.scripts.bower._bower')
+@include('layouts.scripts._non_bower')
