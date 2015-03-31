@@ -351,6 +351,7 @@ module.exports = function(grunt) {
     'sass',
     'wiredep:localFrontend',
     'wiredep:localBackend',
+    'db_dump',
     'shell:migrate',
     'shell:dbseed',
     'phpunit'
@@ -366,6 +367,7 @@ module.exports = function(grunt) {
     'shell:bowerBackend',
     'sass',
     'myusemin',
+    'db_dump',
     'shell:migrate',
     'shell:dbseed'
   ]);
@@ -379,6 +381,7 @@ module.exports = function(grunt) {
     'shell:bowerBackend',
     'sass',
     'myusemin',
+    'db_dump',
     'shell:migrate'
   ]);
   grunt.registerTask('myusemin', [
