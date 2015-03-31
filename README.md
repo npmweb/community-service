@@ -126,6 +126,15 @@ The following are issues and limitations we're aware of:
 * The system handles setting up different campaigns that start and end, but there is not currently a user interface for working with them. Changes need to be made directly in the database.
 * Importing custom "filter attributes" is currently disabled until we improve the logic to make it dynamic for any attributes you might set up.
 
+# Contribute!
+
+Like our software and want to help out? You can do any of the following:
+
+* Send us stories about what you're using our software for at [@npmdigital](https://twitter.com/npmdigital)
+* Flesh out the README.md in this app or one of our packages it uses.
+* Fix bugs in this app or one of our packages.
+* Submit issues for this app or one of our packages.
+
 # License
 
 This application is open-sourced under the MIT license. See the `LICENSE` file for more details.
