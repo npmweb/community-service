@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('admin-theme-laravel-layout::layout')
 
 @section('content')
     <div class="row">
