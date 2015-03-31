@@ -20,8 +20,9 @@ class GlobalViewComposer
     {
         parent::compose($view);
 
+        $config = \NpmWeb\ServiceOpportunities\Models\Config::singleton();
         $view_data = [
-            'system_name' => 'Community Service',
+            'system_name' => $config->system_name,
         ];
 
         $view->with($view_data);

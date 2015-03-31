@@ -14,7 +14,7 @@ class ConfigTableSeeder extends Seeder {
         DB::table('configs')->delete();
 
         Config::create([
-            'system_name' => 'How To Be Rich - Time',
+            'system_name' => 'Community Service',
             'allow_cyo_project_registrations' => true,
             'show_filter_organization' => true,
             'show_filter_beneficiary' => true,
