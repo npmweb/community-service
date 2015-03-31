@@ -1546,12 +1546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/service-opportunities.git",
-                "reference": "3473204a1a082c85d82583a5bd1ba2d363eec3e7"
+                "reference": "1607fa017ca0bc48631f6c87308738144510f2b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/service-opportunities/zipball/3473204a1a082c85d82583a5bd1ba2d363eec3e7",
-                "reference": "3473204a1a082c85d82583a5bd1ba2d363eec3e7",
+                "url": "https://api.github.com/repos/npmweb/service-opportunities/zipball/1607fa017ca0bc48631f6c87308738144510f2b0",
+                "reference": "1607fa017ca0bc48631f6c87308738144510f2b0",
                 "shasum": ""
             },
             "require": {
@@ -1594,7 +1594,7 @@
                 "source": "https://github.com/npmweb/service-opportunities/tree/master",
                 "issues": "https://github.com/npmweb/service-opportunities/issues"
             },
-            "time": "2015-03-31 17:45:41"
+            "time": "2015-03-31 18:53:48"
         },
         {
             "name": "npmweb/upload-handler",
