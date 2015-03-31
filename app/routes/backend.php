@@ -49,6 +49,11 @@ Route::group(['namespace' => 'NpmWeb\ServiceOpportunities\Controllers\Backend', 
         'uses' => 'ReportsController@getRegistrationsSponsorships']);
     Route::post('reports/registrations/sponsorships', ['as'=> 'reports.registrations.sponsorships',
         'uses' => 'ReportsController@postRegistrationsSponsorships']);
+
+    Route::get('config', ['as'=>'configs.edit',
+        'uses' => 'ConfigsController@edit']);
+    Route::put('config', ['as'=>'configs.update',
+        'uses' => 'ConfigsController@update']);
 });
 
 

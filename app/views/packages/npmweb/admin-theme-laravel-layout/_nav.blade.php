@@ -48,6 +48,9 @@
         <li>
             <a href="{{ route('users.index') }}" class="{{{ Request::is( 'users') || Request::is( 'users/*') ? 'active' : '' }}}"><i class='fi-torsos-all'></i> Users</a>
         </li>
+        <li>
+            <a href="{{ route('configs.edit') }}" class="{{{ Request::is( 'config') ? 'active' : '' }}}"><i class='fi-widget'></i> Config</a>
+        </li>
 
     @endif
 
