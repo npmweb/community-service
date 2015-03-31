@@ -50,3 +50,8 @@ Route::group(['namespace' => 'NpmWeb\ServiceOpportunities\Controllers\Backend', 
     Route::post('reports/registrations/sponsorships', ['as'=> 'reports.registrations.sponsorships',
         'uses' => 'ReportsController@postRegistrationsSponsorships']);
 });
+
+
+Route::group(['namespace' => 'NpmWeb\MultilevelOrganizations\Controllers'], function() {
+    Route::resource('users', 'UsersController');
+});

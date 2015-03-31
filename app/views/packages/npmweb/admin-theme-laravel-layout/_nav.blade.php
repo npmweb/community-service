@@ -43,5 +43,13 @@
         </ul>
     </li>
 
+    @if( Auth::user()->access(NpmWeb\MultilevelOrganizations\Models\UserType::SITE_ADMIN_LEVEL) )
+
+        <li>
+            <a href="{{ route('users.index') }}" class="{{{ Request::is( 'users') || Request::is( 'users/*') ? 'active' : '' }}}"><i class='fi-torsos-all'></i> Users</a>
+        </li>
+
+    @endif
+
     @yield('sidenav')
 @endif
