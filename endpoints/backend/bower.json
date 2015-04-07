@@ -20,6 +20,7 @@
     "foundation_calendar_date_time_picker": "git@github.com:npmweb/foundation_calendar_date_time_picker#17427d44c82ceca45e62815775bb905213129b37",
     "jquery-validation-foundation": "git@github.com:npmweb/jquery-validation-foundation#cd0444a08e87abb9bedc87ab51632324b51f5873",
     "jquery-validator-custom-rules": "git@github.com:npmweb/jquery-validator-custom-rules#5831daae3e03214693b3c197bcad21e71339fc34",
+    "js-helpers": "git@github.com:npmweb/js-helpers#9aa9b05b0636fa4bc23981988fc1203ccbc16500",
     "moment": "2.8.4",
     "tinymce": "4.1.6"
   }
