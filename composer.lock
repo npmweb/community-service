@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e771b0cd0c10d08b8bdf12ff3a1580ae",
+    "hash": "42a74f627716ea36a9c0afce74edbcc3",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -91,16 +91,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "dcce91553e2e056857f1ea844949e9a8a71b613d"
+                "reference": "c982fe62c44798c433229cb0425c61b487cc1883"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/dcce91553e2e056857f1ea844949e9a8a71b613d",
-                "reference": "dcce91553e2e056857f1ea844949e9a8a71b613d",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/c982fe62c44798c433229cb0425c61b487cc1883",
+                "reference": "c982fe62c44798c433229cb0425c61b487cc1883",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-02-17 15:50:31"
+            "time": "2015-03-30 15:26:59"
         },
         {
             "name": "graham-campbell/flysystem",
@@ -752,15 +752,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "9af061676707141ae4215a84020d38c7b836f471"
+                "reference": "e0b31a94e73cfd17e96d631f491de63da5955e37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9af061676707141ae4215a84020d38c7b836f471",
-                "reference": "9af061676707141ae4215a84020d38c7b836f471",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e0b31a94e73cfd17e96d631f491de63da5955e37",
+                "reference": "e0b31a94e73cfd17e96d631f491de63da5955e37",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -827,7 +828,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-03-29 14:18:42"
+            "time": "2015-04-07 14:01:27"
         },
         {
             "name": "maatwebsite/excel",
@@ -902,12 +903,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "df7da8a5550eb94cb885df6be7ffebe2768c10fd"
+                "reference": "a54d460500aeaf653cabc1059cc33d07e7b544ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/df7da8a5550eb94cb885df6be7ffebe2768c10fd",
-                "reference": "df7da8a5550eb94cb885df6be7ffebe2768c10fd",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a54d460500aeaf653cabc1059cc33d07e7b544ad",
+                "reference": "a54d460500aeaf653cabc1059cc33d07e7b544ad",
                 "shasum": ""
             },
             "require": {
@@ -967,7 +968,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-03-26 18:30:54"
+            "time": "2015-04-04 10:50:52"
         },
         {
             "name": "nesbot/carbon",
@@ -1062,20 +1063,21 @@
         },
         {
             "name": "npmweb/admin-theme-laravel-layout",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/admin-theme-laravel-layout.git",
-                "reference": "083ea0684240a7fc48c317fbf1e11fe179d5fde8"
+                "reference": "50d4c7731e6aa4d9bd6fb38e285b331ec47ac892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/admin-theme-laravel-layout/zipball/083ea0684240a7fc48c317fbf1e11fe179d5fde8",
-                "reference": "083ea0684240a7fc48c317fbf1e11fe179d5fde8",
+                "url": "https://api.github.com/repos/npmweb/admin-theme-laravel-layout/zipball/50d4c7731e6aa4d9bd6fb38e285b331ec47ac892",
+                "reference": "50d4c7731e6aa4d9bd6fb38e285b331ec47ac892",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~4.2 || ~5.0",
+                "npmweb/laravel-helpers": "1.*",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -1095,10 +1097,10 @@
             ],
             "description": "Layout files to use in Laravel with the NPM Admin Theme look and feel.",
             "support": {
-                "source": "https://github.com/npmweb/admin-theme-laravel-layout/tree/1.0.1",
+                "source": "https://github.com/npmweb/admin-theme-laravel-layout/tree/1.0.2",
                 "issues": "https://github.com/npmweb/admin-theme-laravel-layout/issues"
             },
-            "time": "2015-03-12 17:43:39"
+            "time": "2015-04-07 19:12:09"
         },
         {
             "name": "npmweb/cdn-helper",
@@ -1242,6 +1244,43 @@
                 "issues": "https://github.com/npmweb/laravel-forms/issues"
             },
             "time": "2015-02-25 16:58:16"
+        },
+        {
+            "name": "npmweb/laravel-helpers",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/npmweb/laravel-helpers.git",
+                "reference": "caa725f3e15f0c14e1726dc7286366cc4b29d39a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/npmweb/laravel-helpers/zipball/caa725f3e15f0c14e1726dc7286366cc4b29d39a",
+                "reference": "caa725f3e15f0c14e1726dc7286366cc4b29d39a",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=4.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/NpmWeb/LaravelHelpers/env_helpers.php",
+                    "src/NpmWeb/LaravelHelpers/string_helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel-specific helper functions.",
+            "support": {
+                "source": "https://github.com/npmweb/laravel-helpers/tree/master",
+                "issues": "https://github.com/npmweb/laravel-helpers/issues"
+            },
+            "time": "2015-02-06 12:36:46"
         },
         {
             "name": "npmweb/laravel-login",
@@ -1546,12 +1585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/service-opportunities.git",
-                "reference": "1607fa017ca0bc48631f6c87308738144510f2b0"
+                "reference": "1ce877fcd70ad77b0b1a551c18a686a6d4c8131c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/service-opportunities/zipball/1607fa017ca0bc48631f6c87308738144510f2b0",
-                "reference": "1607fa017ca0bc48631f6c87308738144510f2b0",
+                "url": "https://api.github.com/repos/npmweb/service-opportunities/zipball/1ce877fcd70ad77b0b1a551c18a686a6d4c8131c",
+                "reference": "1ce877fcd70ad77b0b1a551c18a686a6d4c8131c",
                 "shasum": ""
             },
             "require": {
@@ -1594,7 +1633,7 @@
                 "source": "https://github.com/npmweb/service-opportunities/tree/master",
                 "issues": "https://github.com/npmweb/service-opportunities/issues"
             },
-            "time": "2015-03-31 18:53:48"
+            "time": "2015-04-03 10:35:58"
         },
         {
             "name": "npmweb/upload-handler",
@@ -2479,12 +2518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "79b2385ee420944ab89c6972acae9c7c8cb9a412"
+                "reference": "08e783861dd9579bac4092814bbfb0cae6666b65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/79b2385ee420944ab89c6972acae9c7c8cb9a412",
-                "reference": "79b2385ee420944ab89c6972acae9c7c8cb9a412",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/08e783861dd9579bac4092814bbfb0cae6666b65",
+                "reference": "08e783861dd9579bac4092814bbfb0cae6666b65",
                 "shasum": ""
             },
             "require": {
@@ -2523,7 +2562,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2015-02-08 07:07:45"
+            "time": "2015-04-01 15:49:36"
         },
         {
             "name": "symfony/http-kernel",
@@ -2532,12 +2571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "b481edb3c476dcd2040443f38292c1fadd2fac88"
+                "reference": "7b1632cf2bdbc69c59a44942b70d5aae91034304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/b481edb3c476dcd2040443f38292c1fadd2fac88",
-                "reference": "b481edb3c476dcd2040443f38292c1fadd2fac88",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/7b1632cf2bdbc69c59a44942b70d5aae91034304",
+                "reference": "7b1632cf2bdbc69c59a44942b70d5aae91034304",
                 "shasum": ""
             },
             "require": {
@@ -2597,7 +2636,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2015-02-08 07:08:16"
+            "time": "2015-04-01 16:01:45"
         },
         {
             "name": "symfony/process",
@@ -2839,12 +2878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "c50e8cd86acb0e528855c59653006e96d094a5b1"
+                "reference": "3065b197f54c83392a4e0ba355678a5080dd9ee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/c50e8cd86acb0e528855c59653006e96d094a5b1",
-                "reference": "c50e8cd86acb0e528855c59653006e96d094a5b1",
+                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/3065b197f54c83392a4e0ba355678a5080dd9ee2",
+                "reference": "3065b197f54c83392a4e0ba355678a5080dd9ee2",
                 "shasum": ""
             },
             "require": {
@@ -2878,7 +2917,7 @@
             ],
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
-            "time": "2014-08-01 18:02:04"
+            "time": "2015-04-01 14:40:03"
         }
     ],
     "packages-dev": [
@@ -3026,12 +3065,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "c63f2e637c6ac759d83002906c30e6c96d91e5f3"
+                "reference": "856cb378598f57b3ab6499b1abeb05836feb5725"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/c63f2e637c6ac759d83002906c30e6c96d91e5f3",
-                "reference": "c63f2e637c6ac759d83002906c30e6c96d91e5f3",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/856cb378598f57b3ab6499b1abeb05836feb5725",
+                "reference": "856cb378598f57b3ab6499b1abeb05836feb5725",
                 "shasum": ""
             },
             "require": {
@@ -3084,7 +3123,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2015-01-21 05:12:54"
+            "time": "2015-04-04 16:54:49"
         },
         {
             "name": "doctrine/common",
@@ -3092,12 +3131,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "bd6a9bf487f1d6086a704c97fad465c16827aa8d"
+                "reference": "ad89591bebea6490fd589f872d0a9ef63e9674a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/bd6a9bf487f1d6086a704c97fad465c16827aa8d",
-                "reference": "bd6a9bf487f1d6086a704c97fad465c16827aa8d",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/ad89591bebea6490fd589f872d0a9ef63e9674a9",
+                "reference": "ad89591bebea6490fd589f872d0a9ef63e9674a9",
                 "shasum": ""
             },
             "require": {
@@ -3114,7 +3153,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "2.6.x-dev"
                 }
             },
             "autoload": {
@@ -3157,7 +3196,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2015-03-26 00:27:39"
+            "time": "2015-04-02 20:23:27"
         },
         {
             "name": "doctrine/dbal",
@@ -3499,18 +3538,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/padraic/mockery.git",
-                "reference": "5311940484f2c117d32f835637f5c71a49618d8c"
+                "reference": "dbe3cfe736bb1d3e319c4cd0c310c140737028a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/5311940484f2c117d32f835637f5c71a49618d8c",
-                "reference": "5311940484f2c117d32f835637f5c71a49618d8c",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/dbe3cfe736bb1d3e319c4cd0c310c140737028a0",
+                "reference": "dbe3cfe736bb1d3e319c4cd0c310c140737028a0",
                 "shasum": ""
             },
             "require": {
                 "hamcrest/hamcrest-php": "~1.1",
                 "lib-pcre": ">=7.0",
-                "php": ">=5.3.2"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
@@ -3556,7 +3595,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2015-03-21 21:37:36"
+            "time": "2015-04-02 20:16:47"
         },
         {
             "name": "npmweb/laravel-test",
@@ -3919,12 +3958,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "55484334fb4c306ed24bfc3bdb0874685c29036f"
+                "reference": "74ffb87f527f24616f72460e54b595f508dccb5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/55484334fb4c306ed24bfc3bdb0874685c29036f",
-                "reference": "55484334fb4c306ed24bfc3bdb0874685c29036f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/74ffb87f527f24616f72460e54b595f508dccb5c",
+                "reference": "74ffb87f527f24616f72460e54b595f508dccb5c",
                 "shasum": ""
             },
             "require": {
@@ -3933,7 +3972,7 @@
                 "phpunit/php-text-template": "~1.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.4.*@dev"
+                "phpunit/phpunit": "~4.4"
             },
             "suggest": {
                 "ext-soap": "*"
@@ -3941,7 +3980,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4.x-dev"
+                    "dev-master": "2.3.x-dev"
                 }
             },
             "autoload": {
@@ -3966,7 +4005,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-03-18 09:04:51"
+            "time": "2015-04-02 05:36:41"
         },
         {
             "name": "raveren/kint",
@@ -4306,16 +4345,16 @@
         },
         {
             "name": "sebastian/version",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "a77d9123f8e809db3fbdea15038c27a95da4058b"
+                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/a77d9123f8e809db3fbdea15038c27a95da4058b",
-                "reference": "a77d9123f8e809db3fbdea15038c27a95da4058b",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
+                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
                 "shasum": ""
             },
             "type": "library",
@@ -4337,7 +4376,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2014-12-15 14:25:24"
+            "time": "2015-02-24 06:35:25"
         },
         {
             "name": "symfony/yaml",
