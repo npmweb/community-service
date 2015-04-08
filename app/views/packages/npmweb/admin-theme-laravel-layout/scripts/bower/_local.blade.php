@@ -19,5 +19,6 @@
 <script src="{{asset('includes/vendor/jquery-validation/dist/jquery.validate.js')}}"></script>
 <script src="{{asset('includes/vendor/jquery-validation-foundation/jquery.validate.foundation.js')}}"></script>
 <script src="{{asset('includes/vendor/jquery-validator-custom-rules/src/jquery.validate.custom.rules.js')}}"></script>
+<script src="{{asset('includes/vendor/js-helpers/src/string-helpers.js')}}"></script>
 <script src="{{asset('includes/vendor/moment/moment.js')}}"></script>
 <!-- endbower -->

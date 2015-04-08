@@ -1,24 +1,6 @@
 {
   "name": "npmweb/community-service",
   "description": "Community Service",
-  "repositories": [
-    { "type": "vcs", "url": "git@github.com:npmweb/admin-theme-laravel-layout" },
-    { "type": "vcs", "url": "git@github.com:npmweb/cdn-helper" },
-    { "type": "vcs", "url": "git@github.com:npmweb/client-validation-generator" },
-    { "type": "vcs", "url": "git@github.com:npmweb/laravel-base" },
-    { "type": "vcs", "url": "git@github.com:npmweb/laravel-forms" },
-    { "type": "vcs", "url": "git@github.com:npmweb/laravel-helpers" },
-    { "type": "vcs", "url": "git@github.com:npmweb/laravel-login" },
-    { "type": "vcs", "url": "git@github.com:npmweb/laravel-test" },
-    { "type": "vcs", "url": "git@github.com:npmweb/laravel-validator-custom-rules" },
-    { "type": "vcs", "url": "git@github.com:npmweb/multilevel-organizations" },
-    { "type": "vcs", "url": "git@github.com:npmweb/payment" },
-    { "type": "vcs", "url": "git@github.com:npmweb/php-helpers" },
-    { "type": "vcs", "url": "git@github.com:npmweb/php-env-loader" },
-    { "type": "vcs", "url": "git@github.com:npmweb/reference" },
-    { "type": "vcs", "url": "git@github.com:npmweb/service-opportunities" },
-    { "type": "vcs", "url": "git@github.com:npmweb/upload-handler" }
-  ],
   "require": {
     "graham-campbell/flysystem": "~1.0",
     "laravel/framework": "4.2.*",

@@ -14,11 +14,11 @@
     "tests"
   ],
   "dependencies": {
-    "admin-theme": "git@github.com:npmweb/admin-theme#44cd13d35670d07d3a8ae5c3f09975a5a8c4e068",
+    "admin-theme": "1.0.1",
     "bbGrid": "git@github.com:npmweb/bbgrid#ddb3eaac7088adcb16e48d53340f8088519c71d6",
-    "environment-banner": "git@github.com:npmweb/environment-banner#383608065e02ec331a88f879e475712816509a63",
+    "environment-banner": "1.0.1",
     "foundation_calendar_date_time_picker": "git@github.com:npmweb/foundation_calendar_date_time_picker#17427d44c82ceca45e62815775bb905213129b37",
-    "jquery-validation-foundation": "git@github.com:npmweb/jquery-validation-foundation#cd0444a08e87abb9bedc87ab51632324b51f5873",
+    "jquery-validation-foundation": "1.0.2",
     "jquery-validator-custom-rules": "git@github.com:npmweb/jquery-validator-custom-rules#5831daae3e03214693b3c197bcad21e71339fc34",
     "js-helpers": "git@github.com:npmweb/js-helpers#9aa9b05b0636fa4bc23981988fc1203ccbc16500",
     "moment": "2.8.4",

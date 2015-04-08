@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "42a74f627716ea36a9c0afce74edbcc3",
+    "hash": "052da6253ca874ada2958a44c2809554",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -689,16 +689,16 @@
         },
         {
             "name": "laravelbook/ardent",
-            "version": "v2.4.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravelbook/ardent.git",
-                "reference": "0a0238b8040abc1c71401ce27a8edf2619fa5bed"
+                "reference": "8af3cf8cd3ea514c68439fdae0271af71ef1449e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravelbook/ardent/zipball/0a0238b8040abc1c71401ce27a8edf2619fa5bed",
-                "reference": "0a0238b8040abc1c71401ce27a8edf2619fa5bed",
+                "url": "https://api.github.com/repos/laravelbook/ardent/zipball/8af3cf8cd3ea514c68439fdae0271af71ef1449e",
+                "reference": "8af3cf8cd3ea514c68439fdae0271af71ef1449e",
                 "shasum": ""
             },
             "require": {
@@ -744,7 +744,7 @@
                 "sql",
                 "validation"
             ],
-            "time": "2014-02-25 20:39:04"
+            "time": "2014-07-10 04:06:41"
         },
         {
             "name": "league/flysystem",
@@ -752,12 +752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "e0b31a94e73cfd17e96d631f491de63da5955e37"
+                "reference": "768703274efa648ad63ac7646ad85c4e6a7f77e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e0b31a94e73cfd17e96d631f491de63da5955e37",
-                "reference": "e0b31a94e73cfd17e96d631f491de63da5955e37",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/768703274efa648ad63ac7646ad85c4e6a7f77e9",
+                "reference": "768703274efa648ad63ac7646ad85c4e6a7f77e9",
                 "shasum": ""
             },
             "require": {
@@ -828,7 +828,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-04-07 14:01:27"
+            "time": "2015-04-08 11:33:45"
         },
         {
             "name": "maatwebsite/excel",
@@ -1086,6 +1086,7 @@
                     "NpmWeb\\AdminThemeLaravelLayout": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1096,24 +1097,20 @@
                 }
             ],
             "description": "Layout files to use in Laravel with the NPM Admin Theme look and feel.",
-            "support": {
-                "source": "https://github.com/npmweb/admin-theme-laravel-layout/tree/1.0.2",
-                "issues": "https://github.com/npmweb/admin-theme-laravel-layout/issues"
-            },
             "time": "2015-04-07 19:12:09"
         },
         {
             "name": "npmweb/cdn-helper",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/cdn-helper.git",
-                "reference": "865a037bfcf0ad3b0a67d25928e4fb640216257c"
+                "reference": "e3653ce88281a07305f4209f3278ec849c1c60ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/cdn-helper/zipball/865a037bfcf0ad3b0a67d25928e4fb640216257c",
-                "reference": "865a037bfcf0ad3b0a67d25928e4fb640216257c",
+                "url": "https://api.github.com/repos/npmweb/cdn-helper/zipball/e3653ce88281a07305f4209f3278ec849c1c60ab",
+                "reference": "e3653ce88281a07305f4209f3278ec849c1c60ab",
                 "shasum": ""
             },
             "require": {
@@ -1129,15 +1126,12 @@
                     "src/NpmWeb/CdnHelper/helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Laravel helper to create URLs to assets on a CDN.",
-            "support": {
-                "source": "https://github.com/npmweb/cdn-helper/tree/1.0.3",
-                "issues": "https://github.com/npmweb/cdn-helper/issues"
-            },
-            "time": "2015-03-13 19:34:46"
+            "time": "2015-04-07 19:24:42"
         },
         {
             "name": "npmweb/client-validation-generator",
@@ -1145,12 +1139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/client-validation-generator.git",
-                "reference": "d108fbcbb81fb1d36f87102e46b4bd65b1fc4be4"
+                "reference": "20516c2999146a2c57ef54146acc150843f7024e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/client-validation-generator/zipball/d108fbcbb81fb1d36f87102e46b4bd65b1fc4be4",
-                "reference": "d108fbcbb81fb1d36f87102e46b4bd65b1fc4be4",
+                "url": "https://api.github.com/repos/npmweb/client-validation-generator/zipball/20516c2999146a2c57ef54146acc150843f7024e",
+                "reference": "20516c2999146a2c57ef54146acc150843f7024e",
                 "shasum": ""
             },
             "require-dev": {
@@ -1164,30 +1158,30 @@
                     "NpmWeb\\Test\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "description": "Server-side code to generate client-side validation, usually based on server-side validation rules from a different validation framework",
-            "support": {
-                "source": "https://github.com/npmweb/client-validation-generator/tree/1.0.4",
-                "issues": "https://github.com/npmweb/client-validation-generator/issues"
-            },
-            "time": "2015-03-06 16:45:16"
+            "time": "2015-04-08 17:39:09"
         },
         {
             "name": "npmweb/laravel-base",
-            "version": "1.1.1",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/laravel-base.git",
-                "reference": "8dec9717119ecb3bebf934974e679cc2a464e5d7"
+                "reference": "2cd64861fafb5f2c1a442e065087b9e1e4538c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-base/zipball/8dec9717119ecb3bebf934974e679cc2a464e5d7",
-                "reference": "8dec9717119ecb3bebf934974e679cc2a464e5d7",
+                "url": "https://api.github.com/repos/npmweb/laravel-base/zipball/2cd64861fafb5f2c1a442e065087b9e1e4538c4d",
+                "reference": "2cd64861fafb5f2c1a442e065087b9e1e4538c4d",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "~4.1",
-                "laravelbook/ardent": "2.4.*",
+                "laravel/framework": "~4.1 || ~5.0",
+                "laravelbook/ardent": "dev-master@dev",
                 "npmweb/php-helpers": ">=1.0.3"
             },
             "type": "library",
@@ -1196,12 +1190,12 @@
                     "NpmWeb\\LaravelBase\\": "src/NpmWeb/LaravelBase"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "description": "Base classes for Laravel projects: controller and model",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-base/tree/1.1.1",
-                "issues": "https://github.com/npmweb/laravel-base/issues"
-            },
-            "time": "2014-12-16 20:21:33"
+            "time": "2015-04-08 17:35:48"
         },
         {
             "name": "npmweb/laravel-forms",
@@ -1235,28 +1229,25 @@
                     "NpmWeb\\Test\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Extends Laravel's FormBuilder to lay out form elements for Bootstrap or Foundation",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-forms/tree/1.0.5",
-                "issues": "https://github.com/npmweb/laravel-forms/issues"
-            },
             "time": "2015-02-25 16:58:16"
         },
         {
             "name": "npmweb/laravel-helpers",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/laravel-helpers.git",
-                "reference": "caa725f3e15f0c14e1726dc7286366cc4b29d39a"
+                "reference": "cec9817399a54e111866df7d3b5440e94c5ee57a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-helpers/zipball/caa725f3e15f0c14e1726dc7286366cc4b29d39a",
-                "reference": "caa725f3e15f0c14e1726dc7286366cc4b29d39a",
+                "url": "https://api.github.com/repos/npmweb/laravel-helpers/zipball/cec9817399a54e111866df7d3b5440e94c5ee57a",
+                "reference": "cec9817399a54e111866df7d3b5440e94c5ee57a",
                 "shasum": ""
             },
             "require": {
@@ -1272,28 +1263,25 @@
                     "src/NpmWeb/LaravelHelpers/string_helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Laravel-specific helper functions.",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-helpers/tree/master",
-                "issues": "https://github.com/npmweb/laravel-helpers/issues"
-            },
-            "time": "2015-02-06 12:36:46"
+            "time": "2015-04-07 19:58:23"
         },
         {
             "name": "npmweb/laravel-login",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/laravel-login.git",
-                "reference": "69a57a7098f72939c04b7d2d599614bfccadb1cd"
+                "reference": "968694ade3a2fb20a413a06b236394a238e8c63d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-login/zipball/69a57a7098f72939c04b7d2d599614bfccadb1cd",
-                "reference": "69a57a7098f72939c04b7d2d599614bfccadb1cd",
+                "url": "https://api.github.com/repos/npmweb/laravel-login/zipball/968694ade3a2fb20a413a06b236394a238e8c63d",
+                "reference": "968694ade3a2fb20a413a06b236394a238e8c63d",
                 "shasum": ""
             },
             "require": {
@@ -1306,28 +1294,25 @@
                     "NpmWeb\\LaravelLogin\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Controller and view for logging in",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-login/tree/1.0.0",
-                "issues": "https://github.com/npmweb/laravel-login/issues"
-            },
-            "time": "2015-02-20 21:16:56"
+            "time": "2015-04-07 20:02:21"
         },
         {
             "name": "npmweb/laravel-validator-custom-rules",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/laravel-validator-custom-rules.git",
-                "reference": "1e565a19c7a912c3dc815f58bf441676e80878f9"
+                "reference": "f3cbc09d54b34657ecaa31f00effa955275b9431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-validator-custom-rules/zipball/1e565a19c7a912c3dc815f58bf441676e80878f9",
-                "reference": "1e565a19c7a912c3dc815f58bf441676e80878f9",
+                "url": "https://api.github.com/repos/npmweb/laravel-validator-custom-rules/zipball/f3cbc09d54b34657ecaa31f00effa955275b9431",
+                "reference": "f3cbc09d54b34657ecaa31f00effa955275b9431",
                 "shasum": ""
             },
             "require": {
@@ -1346,6 +1331,7 @@
                     "NpmWeb\\LaravelValidatorCustomRules": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1356,11 +1342,7 @@
                 }
             ],
             "description": "Additional custom validation rules",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-validator-custom-rules/tree/master",
-                "issues": "https://github.com/npmweb/laravel-validator-custom-rules/issues"
-            },
-            "time": "2015-03-10 17:52:47"
+            "time": "2015-04-08 17:40:16"
         },
         {
             "name": "npmweb/multilevel-organizations",
@@ -1368,12 +1350,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/multilevel-organizations.git",
-                "reference": "a219649e264df720f78bb0e8bc354fcf3e6b1e57"
+                "reference": "6138a6cc450edf3ec179d1b6f615882ba204216a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/multilevel-organizations/zipball/a219649e264df720f78bb0e8bc354fcf3e6b1e57",
-                "reference": "a219649e264df720f78bb0e8bc354fcf3e6b1e57",
+                "url": "https://api.github.com/repos/npmweb/multilevel-organizations/zipball/6138a6cc450edf3ec179d1b6f615882ba204216a",
+                "reference": "6138a6cc450edf3ec179d1b6f615882ba204216a",
                 "shasum": ""
             },
             "require": {
@@ -1404,6 +1386,7 @@
                     "src/NpmWeb/MultilevelOrganizations/Helpers/ApplicationHelper.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1414,11 +1397,7 @@
                 }
             ],
             "description": "Models/views/controllers for managing organizations within organizations, along with users",
-            "support": {
-                "source": "https://github.com/npmweb/multilevel-organizations/tree/master",
-                "issues": "https://github.com/npmweb/multilevel-organizations/issues"
-            },
-            "time": "2015-03-12 19:08:16"
+            "time": "2015-04-07 20:24:48"
         },
         {
             "name": "npmweb/payment",
@@ -1457,6 +1436,7 @@
                     "NpmWeb\\Tests\\": "tests/integration/NpmWeb/Tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1467,10 +1447,6 @@
                 }
             ],
             "description": "Simple payment interface for NPM apps to use to process online payments. Several drivers supported (maybe)",
-            "support": {
-                "source": "https://github.com/npmweb/payment/tree/master",
-                "issues": "https://github.com/npmweb/payment/issues"
-            },
             "time": "2015-02-20 20:46:35"
         },
         {
@@ -1479,12 +1455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/php-env-loader.git",
-                "reference": "cfc4bda40e318f3dd9256a5d65bba58104466fcb"
+                "reference": "a2111acaf897dab3b804871ae06363c7baecd314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/php-env-loader/zipball/cfc4bda40e318f3dd9256a5d65bba58104466fcb",
-                "reference": "cfc4bda40e318f3dd9256a5d65bba58104466fcb",
+                "url": "https://api.github.com/repos/npmweb/php-env-loader/zipball/a2111acaf897dab3b804871ae06363c7baecd314",
+                "reference": "a2111acaf897dab3b804871ae06363c7baecd314",
                 "shasum": ""
             },
             "require": {
@@ -1499,6 +1475,10 @@
                     "NpmWeb\\PhpEnvLoader": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Josh Justice",
@@ -1506,24 +1486,20 @@
                 }
             ],
             "description": "PHP library to load environment variables from various sources",
-            "support": {
-                "source": "https://github.com/npmweb/php-env-loader/tree/1.0.0",
-                "issues": "https://github.com/npmweb/php-env-loader/issues"
-            },
-            "time": "2014-11-12 14:05:26"
+            "time": "2015-04-08 17:42:29"
         },
         {
             "name": "npmweb/php-helpers",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/php-helpers.git",
-                "reference": "1540e174c3a7da65243e0dd01d8d66597ae98858"
+                "reference": "569a412ab7bebfed93a1b5ec7e15059ec276d2de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/php-helpers/zipball/1540e174c3a7da65243e0dd01d8d66597ae98858",
-                "reference": "1540e174c3a7da65243e0dd01d8d66597ae98858",
+                "url": "https://api.github.com/repos/npmweb/php-helpers/zipball/569a412ab7bebfed93a1b5ec7e15059ec276d2de",
+                "reference": "569a412ab7bebfed93a1b5ec7e15059ec276d2de",
                 "shasum": ""
             },
             "require": {
@@ -1542,25 +1518,25 @@
                     "src/NpmWeb/PhpHelpers/variable_helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "description": "Helper functions for working with PHP primitives",
-            "support": {
-                "source": "https://github.com/npmweb/php-helpers/tree/1.0.4",
-                "issues": "https://github.com/npmweb/php-helpers/issues"
-            },
-            "time": "2015-01-15 21:11:32"
+            "time": "2015-04-08 17:27:05"
         },
         {
             "name": "npmweb/reference",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/reference.git",
-                "reference": "88f17ca3347fb21c2f6f2afc325323d48bde9f08"
+                "reference": "61b0d976dfdcd3329e93ede6761cb38de016c832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/reference/zipball/88f17ca3347fb21c2f6f2afc325323d48bde9f08",
-                "reference": "88f17ca3347fb21c2f6f2afc325323d48bde9f08",
+                "url": "https://api.github.com/repos/npmweb/reference/zipball/61b0d976dfdcd3329e93ede6761cb38de016c832",
+                "reference": "61b0d976dfdcd3329e93ede6761cb38de016c832",
                 "shasum": ""
             },
             "type": "library",
@@ -1569,15 +1545,12 @@
                     "NpmWeb\\Reference\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "PHP library for accessing reference data, such as lists of US states, marital statuses, etc.",
-            "support": {
-                "source": "https://github.com/npmweb/reference/tree/1.0.2",
-                "issues": "https://github.com/npmweb/reference/issues"
-            },
-            "time": "2015-03-13 19:41:32"
+            "time": "2015-04-07 20:37:57"
         },
         {
             "name": "npmweb/service-opportunities",
@@ -1585,12 +1558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/service-opportunities.git",
-                "reference": "1ce877fcd70ad77b0b1a551c18a686a6d4c8131c"
+                "reference": "b22b73a9e18c59c0d2ea7d10b85621746f1ccf50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/service-opportunities/zipball/1ce877fcd70ad77b0b1a551c18a686a6d4c8131c",
-                "reference": "1ce877fcd70ad77b0b1a551c18a686a6d4c8131c",
+                "url": "https://api.github.com/repos/npmweb/service-opportunities/zipball/b22b73a9e18c59c0d2ea7d10b85621746f1ccf50",
+                "reference": "b22b73a9e18c59c0d2ea7d10b85621746f1ccf50",
                 "shasum": ""
             },
             "require": {
@@ -1619,6 +1592,7 @@
                     "src/NpmWeb/ServiceOpportunities/Helpers/ApplicationHelper.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1629,24 +1603,20 @@
                 }
             ],
             "description": "Models/views/controllers for managing community service signups",
-            "support": {
-                "source": "https://github.com/npmweb/service-opportunities/tree/master",
-                "issues": "https://github.com/npmweb/service-opportunities/issues"
-            },
-            "time": "2015-04-03 10:35:58"
+            "time": "2015-04-07 20:24:20"
         },
         {
             "name": "npmweb/upload-handler",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/upload-handler.git",
-                "reference": "aac63b0bb3d73fb122f68d92962bc427f190c65b"
+                "reference": "c7150547accdffb45ebde6a593432a91fb212699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/upload-handler/zipball/aac63b0bb3d73fb122f68d92962bc427f190c65b",
-                "reference": "aac63b0bb3d73fb122f68d92962bc427f190c65b",
+                "url": "https://api.github.com/repos/npmweb/upload-handler/zipball/c7150547accdffb45ebde6a593432a91fb212699",
+                "reference": "c7150547accdffb45ebde6a593432a91fb212699",
                 "shasum": ""
             },
             "require": {
@@ -1666,15 +1636,12 @@
                     "NpmWeb\\Test\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Wraps various ways to handle a file upload, including saving the file or importing data from it.",
-            "support": {
-                "source": "https://github.com/npmweb/upload-handler/tree/1.1.0",
-                "issues": "https://github.com/npmweb/upload-handler/issues"
-            },
-            "time": "2014-09-16 13:46:48"
+            "time": "2015-04-07 20:44:44"
         },
         {
             "name": "patchwork/utf8",
@@ -3599,16 +3566,16 @@
         },
         {
             "name": "npmweb/laravel-test",
-            "version": "1.0.3",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/laravel-test.git",
-                "reference": "63a304b2c2345b4fa92a8d8cbd498b538768840a"
+                "reference": "e67a0aec99c9ef27703fe119d48025bcd7aa1069"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-test/zipball/63a304b2c2345b4fa92a8d8cbd498b538768840a",
-                "reference": "63a304b2c2345b4fa92a8d8cbd498b538768840a",
+                "url": "https://api.github.com/repos/npmweb/laravel-test/zipball/e67a0aec99c9ef27703fe119d48025bcd7aa1069",
+                "reference": "e67a0aec99c9ef27703fe119d48025bcd7aa1069",
                 "shasum": ""
             },
             "require": {
@@ -3621,6 +3588,10 @@
                     "NpmWeb\\LaravelTest": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Josh Justice",
@@ -3628,11 +3599,7 @@
                 }
             ],
             "description": "Base test case classes for Laravel apps",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-test/tree/1.0.3",
-                "issues": "https://github.com/npmweb/laravel-test/issues"
-            },
-            "time": "2014-11-08 16:27:05"
+            "time": "2015-04-08 17:37:12"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3835,12 +3802,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74"
+                "reference": "eab81d02569310739373308137284e0158424330"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db32c18eba00b121c145575fcbcd4d4d24e6db74",
-                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/eab81d02569310739373308137284e0158424330",
+                "reference": "eab81d02569310739373308137284e0158424330",
                 "shasum": ""
             },
             "require": {
@@ -3876,7 +3843,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-01-17 09:51:32"
+            "time": "2015-04-08 04:46:07"
         },
         {
             "name": "phpunit/phpunit",
