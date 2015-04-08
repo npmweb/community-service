@@ -16,3 +16,4 @@ endpoints/frontend/includes/css/dist
 endpoints/backend/includes/js/dist
 endpoints/frontend/includes/js/dist
 .backup
+backups
