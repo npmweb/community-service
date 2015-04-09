@@ -11,23 +11,3 @@
 @import 'organizations';
 
 /* GLOBAL STYLES */
-
-#advanced-search {
-  display: none;
-}
-
-#projects {
-  .project {
-
-    .project-details {
-      display: none;
-    }
-
-    &.open {
-      .project-details {
-        display: block;
-      }
-    }
-
-  }
-}

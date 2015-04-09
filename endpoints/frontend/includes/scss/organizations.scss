@@ -1,6 +1,30 @@
 body#OrganizationsController {
   /* controller-wide styles go here */
 
+  #advanced-search {
+    display: none;
+  }
+
+  .sortable-header {
+    cursor: pointer;
+  }
+
+  #projects {
+    .project {
+
+      .project-details {
+        display: none;
+      }
+
+      &.open {
+        .project-details {
+          display: block;
+        }
+      }
+
+    }
+  }
+
   &.index {
     /* page-specific styles go here */
   }
