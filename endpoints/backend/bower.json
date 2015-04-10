@@ -17,7 +17,7 @@
     "admin-theme": "1.0.1",
     "bbGrid": "git@github.com:npmweb/bbgrid#ddb3eaac7088adcb16e48d53340f8088519c71d6",
     "environment-banner": "1.0.1",
-    "foundation_calendar_date_time_picker": "git@github.com:npmweb/foundation_calendar_date_time_picker#17427d44c82ceca45e62815775bb905213129b37",
+    "foundation_calendar_date_time_picker": "git@github.com:npmweb/foundation_calendar_date_time_picker#9e396f59809d93030cca2718997ed02ad33ebec6",
     "jquery-validation-foundation": "1.0.2",
     "jquery-validator-custom-rules": "git@github.com:npmweb/jquery-validator-custom-rules#5831daae3e03214693b3c197bcad21e71339fc34",
     "js-helpers": "git@github.com:npmweb/js-helpers#9aa9b05b0636fa4bc23981988fc1203ccbc16500",
