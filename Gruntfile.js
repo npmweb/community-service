@@ -130,6 +130,9 @@ module.exports = function(grunt) {
       clearCache: {
         // sudo because cache files owned by apache on server, and not writable
         command: 'sudo php artisan cache:clear'
+      },
+      behat: {
+        command: 'vendor/bin/behat'
       }
     },
     copy: {
@@ -300,6 +303,14 @@ module.exports = function(grunt) {
           '<%= paths.src %>/**/*.php'
         ],
         tasks: ['phpunit','notify:phpunit']
+      },
+      behat: {
+        files: [
+          '<%= paths.tests %>/acceptance/**/*.feature',
+          '<%= paths.tests %>/acceptance/bootstrap/**/*.php',
+          '<%= paths.tests %>/factories/**/*.php',
+        ],
+        tasks: ['shell:behat']
       },
       sass: {
         files: [
