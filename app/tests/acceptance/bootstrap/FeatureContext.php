@@ -68,7 +68,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iChooseAChurchFromTheDropdown()
     {
-        $this->selectOption('opportunities-church-select','Child Church - Alpharetta, GA');
+        $this->selectOption('opportunities-church-select','bcd');
     }
 
     /**
