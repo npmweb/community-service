@@ -5,8 +5,8 @@ return array(
 		'mysql' => array(
 			'host'      => 'localhost',
 			'database'  => 'l_commsvc_test',
-			'username'  => 'l_commsvc',
-			'password'  => 'l_commsvc',
+			'username'  => 'l_commsvc_test',
+			'password'  => 'l_commsvc_test',
 		),
 	),
 );

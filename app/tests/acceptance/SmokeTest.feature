@@ -4,5 +4,6 @@ Feature: Smoke Test
   I want to be able to see the home page
 
   Scenario: User goes to the home page
-    Given I am on the homepage
-    Then I should see "Select Your Church"
+    Given there is a test church
+    When I am on the homepage
+    Then I should see the test church in the dropdown
