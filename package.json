@@ -17,9 +17,7 @@
     "grunt-sass": "~0.17.0",
     "grunt-shell": "~0.7.0",
     "grunt-usemin": "^2.5.1",
-    "grunt-wiredep": "^1.9.0"
-  },
-  "dependencies": {
+    "grunt-wiredep": "^1.9.0",
     "phantomjs": "^1.9.16"
   }
 }
