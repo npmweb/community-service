@@ -8,27 +8,27 @@ use NpmWeb\ServiceOpportunities\Models\OpportunityOccurrence;
 use NpmWeb\ServiceOpportunities\Models\Organization;
 
 $factory(Campaign::class, [
-    'name' => '2015',
-    'permalink' => '2015',
+    'name' => $faker->word,
+    'permalink' => $faker->word,
     'default_end_datetime' => Carbon::now()->addDay(),
     'current' => true,
 ]);
 
 $factory(Organization::class, [
-    'name' => 'Test Church',
-    'permalink' => 'testchurch',
+    'name' => $faker->word,
+    'permalink' => $faker->word,
 ]);
 
 $factory(Beneficiary::class, [
     'organization_id' => 'factory:'.Organization::class,
-    'name' => 'Test Beneficiary',
+    'name' => $faker->word,
 ]);
 
 $factory(Opportunity::class, [
     'beneficiary_id' => 'factory:'.Beneficiary::class,
     'campaign_id' => 'factory:'.Campaign::class,
-    'name' => 'Test Opportunity',
-    'description' => 'its awesome',
+    'name' => $faker->word,
+    'description' => $faker->text,
     'type' => 'regular',
 ]);
 
