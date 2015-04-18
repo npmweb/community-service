@@ -9,6 +9,7 @@ Feature: Smoke Test
     Then I should see the test church in the dropdown
 
   Scenario: User can see results
-    Given I am on the homepage
+    Given there is a test occurrence
+    And I am on the homepage
     And I choose a church from the dropdown
     Then I should see service opportunities for that church

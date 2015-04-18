@@ -52,12 +52,10 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
     /**
      * @static
-     * @beforeFeature
+     * @beforeScenario
      */
     public static function clearTables()
     {
-        echo 'clearing tables';
-
         DB::statement('SET foreign_key_checks = 0');
         DB::statement('SET UNIQUE_CHECKS=0');
 
@@ -76,10 +74,8 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function thereIsATestOccurrence()
     {
-        $result = Factory::create(Campaign::class);
-        $result = Factory::create(OpportunityOccurrence::class);
-        // $result = Factory::create(Opportunity::class);
-        var_dump($result->errors());
+        Factory::create(Campaign::class);
+        $this->occurrence = Factory::create(OpportunityOccurrence::class);
     }
 
     /**
@@ -88,7 +84,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     public function iShouldSeeTheTestChurchInTheDropdown()
     {
         // echo $this->getSession()->getPage()->getContent();
-        $this->assertPageContainsText('Test Church');
+        $this->assertPageContainsText($this->occurrence->opportunity->beneficiary->organization->name);
     }
 
     /**
@@ -96,7 +92,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iChooseAChurchFromTheDropdown()
     {
-        $this->selectOption('opportunities-church-select','testchurch');
+        $this->selectOption('opportunities-church-select',$this->occurrence->opportunity->beneficiary->organization->permalink);
     }
 
     /**
@@ -104,7 +100,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iShouldSeeServiceOpportunitiesForThatChurch()
     {
-        $this->assertPageContainsText('Test Opportunity');
+        $this->assertPageContainsText($this->occurrence->opportunity->name);
     }
 
 }
