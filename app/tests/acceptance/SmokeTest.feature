@@ -4,5 +4,5 @@ Feature: Smoke Test
   I want to be able to see the home page
 
   Scenario: User goes to the home page
-    Given I am on "/"
+    Given I am on the homepage
     Then I should see "Select Your Church"
