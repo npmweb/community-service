@@ -76,7 +76,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iShouldSeeServiceOpportunitiesForThatChurch()
     {
-        echo $this->getSession()->getPage()->getContent();
+        // echo $this->getSession()->getPage()->getContent();
         $this->assertPageContainsText('Build Tables');
     }
 
