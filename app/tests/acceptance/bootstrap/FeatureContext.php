@@ -33,8 +33,8 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public static function bootstrapLaravel()
     {
-        $unitTesting = true;
-        $testEnvironment = 'frontend-testing';
+        // $unitTesting = true;
+        // $testEnvironment = 'frontend-testing'; // TODO doesn't use same environment as web browser
 
         $app = require_once __DIR__ . '/../../../../bootstrap/start.php';
         $app->boot();
@@ -60,5 +60,22 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     {
         // echo $this->getSession()->getPage()->getContent();
         $this->assertPageContainsText('My Test Church');
+    }
+
+    /**
+     * @When I choose a church from the dropdown
+     */
+    public function iChooseAChurchFromTheDropdown()
+    {
+        $this->selectOption('opportunities-church-select','Child Church - Alpharetta, GA');
+    }
+
+    /**
+     * @Then I should see service opportunities for that church
+     */
+    public function iShouldSeeServiceOpportunitiesForThatChurch()
+    {
+        echo $this->getSession()->getPage()->getContent();
+        $this->assertPageContainsText('Build Tables');
     }
 }
