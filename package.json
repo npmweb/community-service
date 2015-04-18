@@ -18,5 +18,8 @@
     "grunt-shell": "~0.7.0",
     "grunt-usemin": "^2.5.1",
     "grunt-wiredep": "^1.9.0"
+  },
+  "dependencies": {
+    "phantomjs": "^1.9.16"
   }
 }

@@ -6,6 +6,7 @@ use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 use Behat\MinkExtension\Context\MinkContext;
+use Behat\Mink\Exception\UnsupportedDriverActionException;
 use Laracasts\TestDummy\Factory;
 use NpmWeb\ServiceOpportunities\Models\Organization;
 
@@ -78,4 +79,5 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         echo $this->getSession()->getPage()->getContent();
         $this->assertPageContainsText('Build Tables');
     }
+
 }

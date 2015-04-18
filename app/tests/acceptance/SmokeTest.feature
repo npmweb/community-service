@@ -10,6 +10,5 @@ Feature: Smoke Test
 
   Scenario: User can see results
     Given there is a test church
-    When I am on the homepage
-    And I choose a church from the dropdown
+    When I am on "/search/bcd"
     Then I should see service opportunities for that church
