@@ -1,0 +1,13 @@
+default:
+    autoload:
+        '': %paths.base%/app/tests/acceptance/bootstrap
+    suites:
+        default:
+            paths:
+                - %paths.base%/app/tests/acceptance
+    extensions:
+        Behat\MinkExtension:
+            base_url: http://local.communityservice.org
+            sessions:
+                default:
+                    goutte: ~

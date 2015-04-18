@@ -16,7 +16,11 @@
     "npmweb/laravel-test": "~1.0",
     "phpunit/phpunit": "4.2.*",
     "raveren/kint": "0.9.*",
-    "symfony/yaml": "2.1.*"
+    "symfony/yaml": "2.1.*",
+    "behat/behat": "^3.0",
+    "behat/mink": "^1.6",
+    "behat/mink-extension": "^2.0",
+    "behat/mink-goutte-driver": "^1.1"
   },
   "autoload": {
     "classmap": [
