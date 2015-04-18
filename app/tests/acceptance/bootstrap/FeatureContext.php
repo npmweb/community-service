@@ -33,18 +33,16 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public static function bootstrapLaravel()
     {
-        // ini_set('memory_limit','256M');
-
         $unitTesting = true;
         $testEnvironment = 'frontend-testing';
 
         $app = require_once __DIR__ . '/../../../../bootstrap/start.php';
         $app->boot();
 
-        Factory::$factoriesPath = base_path().'/app/tests/factories';
-
         Artisan::call('migrate');
         Artisan::call('db:seed');
+
+        Factory::$factoriesPath = base_path().'/app/tests/factories';
     }
 
     /**
@@ -52,7 +50,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function thereIsATestChurch()
     {
-        $result = Factory::create(Organization::class,['name'=>'My Test Church']);
+        Factory::create(Organization::class,['name'=>'My Test Church']);
     }
 
     /**
