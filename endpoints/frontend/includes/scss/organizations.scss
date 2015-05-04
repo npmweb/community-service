@@ -1,6 +1,10 @@
 body#OrganizationsController {
   /* controller-wide styles go here */
 
+  #cyo-banner {
+    margin: 2rem 0;
+  }
+
   #advanced-search {
     display: none;
   }
@@ -11,18 +15,30 @@ body#OrganizationsController {
 
   #projects {
     .project {
+      border: 1px solid #ccc;
+      margin: 1rem 0;
+      padding: 2rem 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 
-      .project-details {
+      .project-details, .fi-minus {
         display: none;
       }
 
       &.open {
-        .project-details {
+        .project-details, .fi-minus {
           display: block;
+        }
+
+        .fi-plus {
+          display: none;
         }
       }
 
     }
+  }
+
+  .close-reveal-modal {
+    display: none;
   }
 
   &.index {

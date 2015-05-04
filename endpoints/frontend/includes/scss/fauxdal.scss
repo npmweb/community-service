@@ -1,0 +1,170 @@
+.fake-modal-close-button {
+    position: absolute;
+    right: .6rem;
+    overflow: visible;
+    z-index: 999;
+    color: $secondbuttonColor;
+    font-size: 1.25rem;
+
+    @media #{$medium-up} {
+        top: 2.25rem;
+    }
+
+    &:hover {
+        color: lighten($secondbuttonColor, 5%);
+    }
+}
+
+.create, .success, .confirm {
+
+    background-color: #333;
+    background-image: none;
+
+    #occurrence-info-header {
+        margin-top: 1rem;
+    }
+
+    .info-panel {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid $primaryColor;
+
+        h2 {
+            padding: 1.25rem 0;
+            margin-top: 0;
+            background-color: $primaryColor;
+            color: #fff;
+        }
+
+        p {
+            line-height: 1;
+            font-size: 1.675rem;
+        }
+    }
+
+    .registration_form_info_container {
+        form {
+            background-color: #ddd;
+            margin-bottom: 1rem;
+            padding: 1rem 1rem 0;
+        }
+    }
+
+    #cyo-project-create {
+        background-color: #ddd;
+        margin-bottom: 1rem;
+        padding: 1rem 1rem 0;
+    }
+
+    .alert.registration-flash {
+        border: 2px solid #f00;
+        margin: 2rem 2rem 0;
+        background-color: $alertColor;
+
+        h5 {
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .top-bar {
+        text-align: center;
+        height: 5rem;
+        background-color: $primaryColor;
+
+        @media #{$medium-up} {
+            margin-top: 2rem;
+        }
+            .title-area {
+                float:none;
+            }
+
+            .name h1 {
+                background-position: center center;
+
+                a {
+                    color: #fff;
+                    width: auto;
+                    margin-top: 1rem;
+                }
+            }
+    }
+
+    .content {
+        background-color: #fff;
+
+        @media #{$medium-up} {
+            margin-bottom: 2rem;
+        }
+
+        #occurrence-info-header {
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .registration_form_info_container {
+            margin-bottom: 1rem;
+
+            h4 {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+
+        ul.attribute-grid {
+            margin-bottom: 1rem;
+
+            li {
+                padding: 0 0rem 1.25rem;
+                border-right: 1px solid #fff;
+
+                h5 {
+                    font-weight: bold;
+                    background-color: #eee;
+                    margin-top: 0;
+                    padding: .625rem 0;
+                    color: #333;
+                    font-size: .8rem;
+                }
+
+                .attribute-body {
+                    font-size: .8rem;
+                }
+            }
+
+            li:last-child {
+                border-right: 0;
+            }
+        }
+
+        .instructions {
+            p {
+                text-align: center;
+            }
+        }
+
+        @media #{$medium-up} {
+            .agreement {
+                .columns {
+                    max-height: 250px;
+                    overflow: scroll;
+                    border: 1px solid #333;
+                    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.5);
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    h4#beneficiary-title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    h4#occurrence-title {
+        font-size: 1.675rem;
+    }
+
+}

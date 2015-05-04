@@ -4,9 +4,9 @@
         @include('layouts._headtag')
     </head>
     <body id='{{{ $route_controller }}}' class='{{{ $route_method }}}'>
-        @include('layouts._header')
+        @include('layouts.tx._header')
         <div class="row">
-            <div class="columns">
+            <div class="columns content">
                 @yield('content')
             </div>
         </div>

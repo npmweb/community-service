@@ -5,9 +5,14 @@
 @include('layouts.scripts._scripts')
 
 {{-- compiled via sass --}}
+<!--
 <link rel="stylesheet" type="text/css" href="{{ asset('includes/css/dist/main.min.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('includes/css/makeitbetter.css') }}" />
 @yield('css')
+-->
+
+{{-- moving css to layouts --}}
+@include('layouts.css._css')
 
 @if (is_production())
 <script>

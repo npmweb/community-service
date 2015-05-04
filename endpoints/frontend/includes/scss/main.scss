@@ -7,7 +7,33 @@
 /* if you don't want default foundation styles: */
 /* @import '../../../shared/components/meyer-reset/stylesheets/_meyer-reset.scss'; */
 
+@import 'fauxdal';
+
 /* one sass file per controller, for any controller-specific styles */
 @import 'organizations';
 
 /* GLOBAL STYLES */
+
+a {
+    color: $linkColor;
+
+    &:hover {
+        color: lighten($linkColor, 10%);
+    }
+}
+
+.button {
+    background-color: $buttonColor;
+
+    &:hover, &:focus {
+        background-color: lighten($buttonColor, 10%);
+    }
+
+    &.secondary {
+        background-color: $secondbuttonColor;
+
+        &:hover, &:focus {
+            background-color: lighten($secondbuttonColor, 10%);
+        }
+    }
+}
