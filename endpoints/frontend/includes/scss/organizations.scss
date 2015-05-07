@@ -20,8 +20,12 @@ body#OrganizationsController {
       padding: 2rem 1rem;
       box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 
-      .project-details, .fi-minus {
+      .project-details, .fi-minus, .fi-info {
         display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
 
       &.open {
@@ -29,9 +33,18 @@ body#OrganizationsController {
           display: block;
         }
 
+        .fi-info {
+            display: inline;
+        }
+
         .fi-plus {
           display: none;
         }
+
+        &:hover {
+          cursor: default;
+        }
+
       }
 
     }
