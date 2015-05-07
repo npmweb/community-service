@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use NpmWeb\ServiceOpportunities\Models\Campaign;
 
 class CampaignTableSeeder extends Seeder {
@@ -8,14 +9,18 @@ class CampaignTableSeeder extends Seeder {
     {
         DB::table('campaigns')->delete();
 
-        foreach( range(2011,2015) as $i => $year ) {
+        $startYear = Carbon::now()->subYears(4)->year;
+        $endYear = Carbon::now()->year;
+
+        foreach( range($startYear,$endYear) as $i => $year ) {
+            echo $year;
             Campaign::create([
                 'id' => $i+1,
                 'name' => $year,
                 'permalink' => $year,
                 'current' => ($year == 2015),
                 'default_start_datetime' => $year.'-01-01',
-                'default_end_datetime' => $year.'-04-26',
+                'default_end_datetime' => $year.'-12-31',
             ]);
         }
     }
