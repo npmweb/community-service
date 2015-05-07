@@ -13,7 +13,6 @@ class CampaignTableSeeder extends Seeder {
         $endYear = Carbon::now()->year;
 
         foreach( range($startYear,$endYear) as $i => $year ) {
-            echo $year;
             Campaign::create([
                 'id' => $i+1,
                 'name' => $year,
